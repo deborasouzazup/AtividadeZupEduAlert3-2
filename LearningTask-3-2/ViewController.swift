@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
     
     @IBAction func BotãoConfirmarTRanferencia(_ sender: Any) {
@@ -20,9 +20,9 @@ class ViewController: UIViewController {
     }
     
     func exibirAlertaDeTransacao() {
-        let alert = UIAlertController(title: "Tudo pronto", message: "Estamos verificando a transação.                      Em instantes você deve receber uma notificação com a confirmação da transferência.", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Tudo pronto", message: "Estamos verificando a transação.\nEm instantes você deve receber uma notificação com a confirmação da transferência.", preferredStyle: .alert)
         
-        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
         
         self.present(alert, animated: true, completion: nil)
     }
